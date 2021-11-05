@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Flowers>
+    <flower>
+        <box>
+            <name>Bouquet</name>
+            <price>4</price>
+        </box>
+        <flower>
+            <name>Alstroemeria</name>
+            <price>45</price>
+            <quantity>5</quantity>
+        </flower>
+        <id>0</id>
+        <price>229</price>
+    </flower>
+    <flower>
+        <box>
+            <name>Package</name>
+            <price>5</price>
+        </box>
+        <flower>
+            <name>Chrysanthemum</name>
+            <price>34</price>
+            <quantity>6</quantity>
+        </flower>
+        <id>1</id>
+        <price>209</price>
+    </flower>
+</Flowers>

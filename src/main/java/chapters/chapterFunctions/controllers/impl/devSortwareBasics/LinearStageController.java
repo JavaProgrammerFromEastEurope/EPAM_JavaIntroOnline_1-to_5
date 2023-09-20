@@ -5,12 +5,13 @@ import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class LinearStageController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> lineFunctions;
+    private final Map<Integer, IFunction> lineFunctions;
 
     public LinearStageController() {
         lineFunctions = FunctionFactory.getInstance().getLineFunctions();

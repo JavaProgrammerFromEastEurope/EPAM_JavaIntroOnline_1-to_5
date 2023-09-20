@@ -4,13 +4,13 @@ import chapters.chapterFunctions.controllers.IFunctionController;
 import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
-import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class DecompositionController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> decFunctions;
+    private final Map<Integer, IFunction> decFunctions;
 
     public DecompositionController() {
         decFunctions = FunctionFactory.getInstance().getDecFunctions();

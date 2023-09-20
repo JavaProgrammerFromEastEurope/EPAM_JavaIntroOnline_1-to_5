@@ -5,12 +5,13 @@ import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class MatrixArrayController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> matrixFunctions;
+    private final Map<Integer, IFunction> matrixFunctions;
 
     public MatrixArrayController() {
         matrixFunctions = FunctionFactory.getInstance().getMatrixFunctions();

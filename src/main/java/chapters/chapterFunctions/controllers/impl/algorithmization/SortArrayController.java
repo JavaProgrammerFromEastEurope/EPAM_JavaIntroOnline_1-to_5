@@ -5,12 +5,13 @@ import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class SortArrayController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> sortFunctions;
+    private final Map<Integer, IFunction> sortFunctions;
 
     public SortArrayController() {
         sortFunctions = FunctionFactory.getInstance().getSortFunctions();

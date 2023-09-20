@@ -5,12 +5,13 @@ import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class OneDimArrayController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> arraysFunctions;
+    private final Map<Integer, IFunction> arraysFunctions;
 
     public OneDimArrayController() {
         arraysFunctions = FunctionFactory.getInstance().getArraysFunctions();

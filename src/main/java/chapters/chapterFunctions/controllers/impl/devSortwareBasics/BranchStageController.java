@@ -5,12 +5,13 @@ import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class BranchStageController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> branchFunctions;
+    private final Map<Integer, IFunction> branchFunctions;
 
     public BranchStageController() {
         branchFunctions = FunctionFactory.getInstance().getBranchFunctions();

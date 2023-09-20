@@ -5,12 +5,13 @@ import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class StringsController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> stringFunctions;
+    private final Map<Integer, IFunction> stringFunctions;
 
     public StringsController() {
         stringFunctions = FunctionFactory.getInstance().getStringFunctions();

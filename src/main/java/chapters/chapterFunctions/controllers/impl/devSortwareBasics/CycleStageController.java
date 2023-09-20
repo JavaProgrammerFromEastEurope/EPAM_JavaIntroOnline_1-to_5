@@ -5,12 +5,13 @@ import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class CycleStageController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> cycleFunctions;
+    private final Map<Integer, IFunction> cycleFunctions;
 
     public CycleStageController() {
         cycleFunctions = FunctionFactory.getInstance().getCycleFunctions();

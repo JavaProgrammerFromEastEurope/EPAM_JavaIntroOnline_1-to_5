@@ -4,10 +4,11 @@ import chapters.chapterFunctions.controllers.IFunctionController;
 import chapters.chapterFunctions.controllers.impl.FunctionsFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public abstract class BaseSoftwareAction {
 
-    public final HashMap<Integer, IFunctionController> devSoftwareActions;
+    public final Map<Integer, IFunctionController> devSoftwareActions;
 
     public BaseSoftwareAction() {
         devSoftwareActions = FunctionsFactory.getInstance().getDevSoftControllers();

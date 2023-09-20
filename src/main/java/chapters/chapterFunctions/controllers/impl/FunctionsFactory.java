@@ -13,6 +13,7 @@ import chapters.chapterFunctions.controllers.impl.stringProcessing.StringBuilder
 import chapters.chapterFunctions.controllers.impl.stringProcessing.StringsController;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class FunctionsFactory {
 
@@ -41,15 +42,15 @@ public class FunctionsFactory {
         return instance;
     }
 
-    public HashMap<Integer, IFunctionController> getAlgorithmControllers() {
+    public Map<Integer, IFunctionController> getAlgorithmControllers() {
         return algorithmControllers;
     }
 
-    public HashMap<Integer, IFunctionController> getDevSoftControllers() {
+    public Map<Integer, IFunctionController> getDevSoftControllers() {
         return devSoftControllers;
     }
 
-    public HashMap<Integer, IFunctionController> getStrProcControllers() {
+    public Map<Integer, IFunctionController> getStrProcControllers() {
         return strProcControllers;
     }
 }

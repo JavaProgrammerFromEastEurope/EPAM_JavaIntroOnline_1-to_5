@@ -15,10 +15,12 @@ import chapters.chapterFunctions.functions.impl.stringProcessing.stringBuilder.*
 import chapters.chapterFunctions.functions.impl.stringProcessing.strings.*;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class FunctionFactory {
 
     private final Map<Integer, IFunction> branchFunctions = new HashMap<>();
+    private final Map<Integer, IFunction> cycleFunctions = new HashMap<>();
     private final Map<Integer, IFunction> lineFunctions   = new HashMap<>();
     private final Map<Integer, IFunction> arraysFunctions = new HashMap<>();
     private final Map<Integer, IFunction> matrixFunctions = new HashMap<>();

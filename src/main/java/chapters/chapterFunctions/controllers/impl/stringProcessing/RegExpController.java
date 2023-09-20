@@ -5,12 +5,13 @@ import chapters.chapterFunctions.functions.IFunction;
 import chapters.chapterFunctions.functions.impl.FunctionFactory;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import static receiver.Receiver.communicationBridge;
 
 public class RegExpController implements IFunctionController {
 
-    private final HashMap<Integer, IFunction> regExpFunctions;
+    private final Map<Integer, IFunction> regExpFunctions;
 
     public RegExpController() {
         regExpFunctions = FunctionFactory.getInstance().getRegExpFunctions();
